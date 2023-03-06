@@ -1,0 +1,36 @@
+﻿body {
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.title-tbl {
+    padding-bottom: 20px;
+}
+
+
+.action-header {
+    padding-left: 10px;
+    font-size: 10px;
+}
+
+.action-header-name {
+    padding-left: 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: #DDF7E3;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+tr:not(:first-child):hover {
+    background-color: #ECF9FF;
+}
+.griv {
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+}
