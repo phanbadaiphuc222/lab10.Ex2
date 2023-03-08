@@ -16,7 +16,7 @@ namespace Student
         {
             try
             {
-                con = new SqlConnection("Data Source=TUFGAMING;Integrated Security=True; Database=QLSV");
+                con = new SqlConnection("Data Source=TUONGVI\\SQLEXPRESS;Integrated Security=True; Database=QLSV;uid=mylogin;pwd=mylogin");
                 con.Open();
             }
             catch (Exception)

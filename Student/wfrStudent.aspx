@@ -18,6 +18,7 @@
                     </div>
                 </div>
                 <asp:GridView CssClass="griv"
+                    DataKeyNames="masv"
                     ID="grvStudent"
                     runat="server"
                     Height="500px" Width="900px"
@@ -30,7 +31,7 @@
                     OnRowEditing="grvStudent_RowEditing"
                     OnRowUpdating="grvStudent_RowUpdating"
                     OnRowCancelingEdit="grvStudent_RowCancelingEdit"
-                    OnRowDeleting="grvStudent_OnRowDeleting">
+                    OnRowDeleting="grvStudent_OnRowDeleting" OnSelectedIndexChanged="grvStudent_SelectedIndexChanged">
 
                     <Columns>
                         <asp:TemplateField>
@@ -59,8 +60,12 @@
                         <asp:BoundField DataField="lop" HeaderText="Lớp" />
                     </Columns>
                 </asp:GridView>
+
+               <asp:GridView ID="grvStudent2" runat="server">
+                </asp:GridView>
             </form>
         </div>
     </div>
+
 </body>
 </html>
